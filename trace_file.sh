@@ -20,7 +20,7 @@ trace_string=$(
 
 mv $HOME/dotfiles/.git $HOME
 git add $trace_string
-git commit -m "$(date)"
+git commit -m "nothing"
 mv .git $HOME/dotfiles -f
 
 if [ $? -eq 0 ]; then
