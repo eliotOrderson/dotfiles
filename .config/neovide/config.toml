@@ -1,0 +1,15 @@
+fork = true
+frame = "full"
+idle = true
+maximized = true 
+neovim-bin = "/usr/bin/nvim" # in reality found dynamically on $PATH if unset
+no-multigrid = false
+srgb = false
+tabs = true
+theme = "auto"
+mouse-cursor-icon = "arrow"
+title-hidden = true
+vsync = true
+wsl = false
+
+
