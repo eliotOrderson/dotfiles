@@ -99,7 +99,7 @@ function lf() {
 }
 
 alias vi="neovide"
-alias rm-real="/usr/bin/rm -rf "
+alias rm-rf="/usr/bin/rm -rf "
 alias rm="safe_rm.sh"
 alias goto-trash="cd ~/.local/share/Trash/files/"
 alias yay="paru $1 --bottomup --makepkg $HOME/.makepkg"
