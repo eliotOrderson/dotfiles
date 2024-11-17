@@ -5,6 +5,7 @@ trace_array=(
     "$HOME/.config/pip/pip.conf"
     "$HOME/.config/neovide/config.toml"
     "$HOME/.config/nvim/"
+    "$HOME/.config/zed/"
     "$HOME/.config/kitty/kitty.conf"
     "$HOME/.config/hypr/userprefs.conf"
     "$HOME/.config/fcitx5"

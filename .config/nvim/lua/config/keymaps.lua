@@ -47,7 +47,7 @@ local function inmap(lhs, rhs, visual_same_or_other, esc_mode)
 end
 
 -- close buffer
-map("n", "<m-q>", LazyVim.ui.bufremove, { desc = "close buffer" })
+map("n", "<m-q>", function()Snacks.bufdelete() end, { desc = "Delete Buffer" })
 
 -- basic map
 map("i", "jj", "<esc>", opts)
