@@ -13,6 +13,7 @@ trace_array=(
     "$HOME/.local/share/bin/safe_rm.sh"
     "$HOME/.local/share/bin/autostart.sh"
     "$HOME/.zshrc"
+    "$HOME/.makepkg"
     "$HOME/trace_file.sh"
 )
 

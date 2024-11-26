@@ -5,12 +5,22 @@
 //
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
+
+// While unusual, but usefull
+// ctrl-*   search text under mouse words
+// shift-c  cut current position to end words
+// cs"'     change " to '
+// ds"      delete "
+// zz       align the line to center
+// gl/L     create next/prev cousor
+// gs       open symbol window
+// g.       code action
 [
   {
     "context": "Editor",
     "bindings": {
-      // "ctrl-f": "buffer_search::Deploy", // vim default: page down
       "ctrl-c": "editor::Copy",
+      "ctrl-x": "editor::Cut",
       "ctrl-v": "editor::Paste",
       "ctrl-o": "workspace::Open",
       "ctrl-a": "editor::SelectAll",
@@ -18,23 +28,28 @@
       "alt-j": "editor::MoveLineDown"
     }
   },
-
   {
     "context": "vim_mode == normal",
     "bindings": {
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
+
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem",
       "shift-y": ["workspace::SendKeystrokes", "y $"],
+
       "alt-l": ["workspace::SendKeystrokes", "$"],
       "alt-h": ["workspace::SendKeystrokes", "^"],
+      "alt-=": ["workspace::SendKeystrokes", "% l v % % h"],
+
       "ctrl-[": "editor::Outdent",
       "ctrl-]": "editor::Indent",
       "ctrl-e": "editor::GoToDefinition",
-      "space d s": "editor::GoToDefinitionSplit",
-      "space I": "editor::GoToImplementation",
-
       "ctrl-q": "pane::GoBack",
       "ctrl-n": ["editor::SelectNext", { "replace_newest": false }],
+
+      "space d s": "editor::GoToDefinitionSplit",
+      "space I": "editor::GoToImplementation",
       "space f f ": "file_finder::Toggle",
       "space -": "pane::SplitDown",
       "space \\": "pane::SplitRight",
@@ -55,10 +70,12 @@
     "bindings": {
       "ctrl-[": "editor::Outdent",
       "ctrl-]": "editor::Indent",
+      "ctrl-/": "vim::ToggleComments",
       "ctrl-n": ["editor::SelectNext", { "replace_newest": false }],
       "ctrl-alt-a": "editor::SelectAllMatches",
+
       "alt-l": ["workspace::SendKeystrokes", "$ h"],
-      "alt-h": ["workspace::SendKeystrokes", "^ l"]
+      "alt-h": ["workspace::SendKeystrokes", "^"]
     }
   },
 
@@ -116,10 +133,9 @@
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "alt-q": "pane::CloseActiveItem",
-      "shift-h": "pane::ActivatePrevItem",
-      "shift-l": "pane::ActivateNextItem",
       "shift-alt-h": "pane::SwapItemLeft",
-      "shift-alt-l": "pane::SwapItemRight"
+      "shift-alt-l": "pane::SwapItemRight",
+      "ctrl-enter": "repl::Run"
     }
   }
 ]

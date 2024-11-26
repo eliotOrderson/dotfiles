@@ -87,8 +87,10 @@ alias mkdir='mkdir -p'
 
 #Display Pokemon
 # pokemon-colorscripts --no-title -r 1,3,6
-source ~/.profile
 export TERM=xterm
+export PATH=$PATH:go/bin
+
+source ~/.profile
 function lf() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
