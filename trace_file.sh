@@ -14,6 +14,7 @@ trace_array=(
     "$HOME/.local/share/bin/autostart.sh"
     "$HOME/.zshrc"
     "$HOME/.makepkg"
+    "$HOME/dotfiles/config"
     "$HOME/trace_file.sh"
 )
 
