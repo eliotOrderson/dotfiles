@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git() {
+    if [[ $# -gt 1 && $(echo $1 | grep -Eic '\b(clone|fetch|pull)\b') -eq 1 ]]; then
+        /bin/git "$@" --depth 1
+    else
+        /bin/git "$@"
+    fi
+}
+
+source /bin/makepkg "$@"
