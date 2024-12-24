@@ -15,6 +15,7 @@
 // gl/L     create next/prev cousor
 // gs       open symbol window
 // g.       code action
+// vii       selecting indent-text-object
 [
   {
     "context": "Editor",
@@ -31,8 +32,8 @@
   {
     "context": "vim_mode == normal",
     "bindings": {
-      "] d": "editor::GoToDiagnostic",
-      "[ d": "editor::GoToPrevDiagnostic",
+      // "] d": "editor::GoToDiagnostic",
+      // "[ d": "editor::GoToPrevDiagnostic",
 
       "shift-h": "pane::ActivatePrevItem",
       "shift-l": "pane::ActivateNextItem",
