@@ -34,7 +34,7 @@
     "bindings": {
       // "] d": "editor::GoToDiagnostic",
       // "[ d": "editor::GoToPrevDiagnostic",
-
+      // "enter": "editor::NewlineBelow",
       "shift-h": "pane::ActivatePrevItem",
       "shift-l": "pane::ActivateNextItem",
       "shift-y": ["workspace::SendKeystrokes", "y $"],
@@ -104,6 +104,12 @@
   {
     "context": "Editor",
     "bindings": {
+      "alt-e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
       "alt-e": "workspace::ToggleLeftDock"
     }
   },
@@ -133,6 +139,7 @@
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-shift-e": "project_panel::ToggleFocus",
       "alt-q": "pane::CloseActiveItem",
       "shift-alt-h": "pane::SwapItemLeft",
       "shift-alt-l": "pane::SwapItemRight",

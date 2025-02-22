@@ -35,12 +35,12 @@
   },
   "extend_comment_on_newline": false,
   "ui_font_size": 20,
-  "buffer_font_size": 22,
+  "buffer_font_size": 22.0,
   "vim_mode": true,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "theme": {
     "mode": "system",
-    "light": "JetBrains New Dark",
+    "light": "Tokyo Night",
     "dark": "One Dark"
   },
   "languages": {

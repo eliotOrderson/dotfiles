@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 if vim.g.neovide then
+  vim.g.snacks_animate = false
   vim.o.guifont = "JetBrainsMonoNL Nerd Font:h18"
   vim.g.neovide_transparency = 0.95
 end

@@ -1,55 +1,4 @@
 return {
-  {
-    "Mythos-404/xmake.nvim",
-    version = "^3",
-    lazy = true,
-    event = "BufReadPost xmake.lua",
-    init = function()
-      require("lualine").setup({
-        sections = {
-          lualine_y = {
-            {
-              function()
-                if not vim.g.loaded_xmake then
-                  return ""
-                end
-                local Info = require("xmake.info")
-                if Info.mode.current == "" then
-                  return ""
-                end
-                if Info.target.current == "" then
-                  return "Xmake: Not Select Target"
-                end
-                return ("%s(%s)"):format(Info.target.current, Info.mode.current)
-              end,
-              cond = function()
-                return vim.o.columns > 100
-              end,
-            },
-          },
-        },
-      })
-    end,
-    config = true,
-  },
-
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    build = "cd app && yarn install",
-    init = function()
-      vim.g.mkdp_filetypes = { "markdown" }
-    end,
-    ft = { "markdown" },
-  },
-
-  -- fittencode ai
-  {
-    "luozhiya/fittencode.nvim",
-    config = function()
-      require("fittencode").setup()
-    end,
-  },
 
   -- remote development
   -- {
@@ -96,7 +45,7 @@ return {
       })
     end,
   },
-  -- fold code with za or zc
+  -- -- fold code with za or zc
   {
     "kevinhwang91/nvim-ufo",
     dependencies = "kevinhwang91/promise-async",
@@ -105,12 +54,16 @@ return {
       vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
       vim.o.foldlevelstart = 99
       vim.o.foldenable = true
+
+      -- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
+      vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+      vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities.textDocument.foldingRange = {
         dynamicRegistration = false,
-        lineFoldingOnly = false,
+        lineFoldingOnly = true,
       }
-      local language_servers = require("lspconfig").util.available_servers() -- or list servers manually like {'gopls', 'clangd'}
+      local language_servers = vim.lsp.get_clients() -- or list servers manually like {'gopls', 'clangd'}
       for _, ls in ipairs(language_servers) do
         require("lspconfig")[ls].setup({
           capabilities = capabilities,

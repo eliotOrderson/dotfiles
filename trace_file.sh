@@ -24,7 +24,7 @@ trace_string=$(
     echo "${trace_array[*]}"
 )
 
-mv $HOME/dotfiles/.git $HOME
+mv $HOME/dotfiles/.git $HOME -f
 git add $trace_string
 git commit -m "nothing"
 mv .git $HOME/dotfiles -f
