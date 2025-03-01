@@ -16,7 +16,9 @@ return {
   --   config = true,
   -- },
 
-  { "mg979/vim-visual-multi" },
+  -- { "mg979/vim-visual-multi" },
+    {"terryma/vim-multiple-cursors"},
+
 
   -- fast expand(select) text
   {

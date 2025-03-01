@@ -5,6 +5,23 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ssh_connections": [
+    {
+      "host": "172.17.0.2",
+      "username": "root",
+      "port": 22,
+      "projects": [
+        {
+          "paths": [
+            "/workspace"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "assistant": {
     "enabled": true,
     "default_model": {
@@ -41,7 +58,7 @@
   "theme": {
     "mode": "system",
     "light": "Tokyo Night",
-    "dark": "One Dark"
+    "dark": "Gruvbox Dark Hard"
   },
   "languages": {
     "JavaScript": {
