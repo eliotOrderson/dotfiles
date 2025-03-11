@@ -12,11 +12,11 @@ trace_array=(
     "$HOME/.local/share/bin/windowoperation.sh"
     "$HOME/.local/share/bin/safe_rm.sh"
     "$HOME/.local/share/bin/autostart.sh"
-    "$HOME/.zshrc"
+    "$HOME/.hyde.zshrc"
     "$HOME/.zsh_history"
     "$HOME/.makepkg"
-    "$HOME/dotfiles/config"
     "$HOME/trace_file.sh"
+    "$HOME/vscode-profile"
 )
 
 # concatenate the trace array into a string
@@ -25,10 +25,10 @@ trace_string=$(
     echo "${trace_array[*]}"
 )
 
-mv $HOME/dotfiles/.git $HOME -f
+mv $HOME/hypr-dotfiles/.git $HOME -f
 git add $trace_string
-git commit -m "nothing"
-mv .git $HOME/dotfiles -f
+git commit -m "auto commit"
+mv .git $HOME/hypr-dotfiles -f
 
 if [ $? -eq 0 ]; then
     echo "Files added successfully."
