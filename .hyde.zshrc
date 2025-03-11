@@ -74,8 +74,7 @@ setopt hist_reduce_blanks
 setopt SHARE_HISTORY
 
 export TERM=xterm
-export PATH=$PATH:go/bin
-export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
+export PATH=$PATH:~/.local/share/bin
 
 source ~/.profile
 function lf() {
