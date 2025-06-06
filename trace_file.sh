@@ -28,7 +28,7 @@ trace_string=$(
 mv $HOME/hypr-dotfiles/.git $HOME -f
 git add $trace_string
 git commit -m "auto commit"
-mv .git $HOME/hypr-dotfiles -f
+mv $HOME/.git $HOME/hypr-dotfiles -f
 
 if [ $? -eq 0 ]; then
     echo "Files added successfully."
