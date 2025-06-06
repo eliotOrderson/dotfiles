@@ -6,6 +6,7 @@ return {
       colorscheme = "tokyonight-storm",
     },
   },
+
   --theme
   { "ellisonleao/gruvbox.nvim" },
   { "sainnhe/everforest" },

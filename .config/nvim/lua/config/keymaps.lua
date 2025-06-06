@@ -84,5 +84,6 @@ inmap("<c-e>", "gd", false, false)
 -- swap buffer
 inmap("<s-m-h>", ":BufferLineMovePrev<cr>", false, true)
 inmap("<s-m-l>", ":BufferLineMoveNext<cr>", false, true)
+
 -- comment code
 inmap("<c-/>", "gcl", "gc", false)

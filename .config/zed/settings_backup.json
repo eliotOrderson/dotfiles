@@ -22,7 +22,7 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "agent": {
+  "assistant": {
     "enabled": true,
     "default_model": {
       "provider": "ollama",

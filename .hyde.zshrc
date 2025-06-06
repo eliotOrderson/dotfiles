@@ -38,6 +38,7 @@
 #  Plugins 
 # manually add your oh-my-zsh plugins here
 plugins=(
+    "z"
     "sudo"
     "zsh-256color"
     # "git"                     # (default)
@@ -74,7 +75,7 @@ setopt hist_reduce_blanks
 setopt SHARE_HISTORY
 
 export TERM=xterm
-export PATH=$PATH:~/.local/share/bin
+export PATH=$PATH:~/.local/share/bin:~/.cargo/bin
 
 source ~/.profile
 function lf() {
