@@ -7,7 +7,7 @@
 // from the command palette.
 
 // While unusual, but usefull
-// shift-*   search text under mouse words
+// ctrl-*   search text under mouse words
 // shift-c  cut current position to end words
 // cs"'     change " to '
 // ds"      delete "
@@ -132,14 +132,13 @@
       "d": ["project_panel::Trash", { "skip_prompt": false }]
     }
   },
-
   // global: remap keybindings
   {
     "bindings": {
-      "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       "ctrl-shift-e": "project_panel::ToggleFocus",
       "alt-q": "pane::CloseActiveItem",
       "shift-alt-h": "pane::SwapItemLeft",

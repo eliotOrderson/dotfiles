@@ -1,5 +1,58 @@
-return {
+local function load_project_rust_settings()
+  local config_file = vim.fn.getcwd() .. "/rust-analyzer.json"
+  if vim.fn.filereadable(config_file) == 1 then
+    local ok, content = pcall(vim.fn.readfile, config_file)
+    if ok and content then
+      local json_str = table.concat(content, "\n")
+      local success, decoded = pcall(vim.fn.json_decode, json_str)
+      if success and type(decoded) == "table" then
+        return decoded
+      end
+    end
+  end
+  return {}
+end
 
+local settings = {
+  ["rust-analyzer"] = {
+    inlayHints = {
+      bindingModeHints = { enable = true },
+      closingBraceHints = { minLines = 0 },
+      closureCaptureHints = { enable = true },
+      closureReturnTypeHints = { enable = "always" },
+      expressionAdjustmentHints = {
+        enable = "reborrow",
+        hideOutsideUnsafe = true,
+      },
+      -- lifetimeElisionHints = { enable = "skip_trivial" },
+      maxLength = vim.NIL,
+      typing = { triggerChars = "=.{(><" },
+    },
+    -- check = {
+    --   features = "binance",
+    -- },
+    -- diagnostics = {
+    --   disabled = { "inactive-code" },
+    -- },
+  },
+}
+
+
+vim.g.rustaceanvim = {
+
+  --- @type `rustaceanvim.tools.Opts`
+  tools = {
+    reload_workspace_from_cargo_toml = true,
+    float_win_config = { border = { "", "", "", " ", "", "", "", " " } },
+  },
+  --- @type `rustaceanvim.lsp.ClientOpts`
+  server = {
+        settings = vim.tbl_deep_extend("force", settings,load_project_rust_settings())
+    },
+  --- @type `rustaceanvim.dap.Opts`
+  dap = {},
+}
+return {
   -- remote development
   -- {
   --   "chipsenkbeil/distant.nvim",
@@ -17,6 +70,11 @@ return {
   -- },
 
   -- { "mg979/vim-visual-multi" },
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^6", -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
   {
     "jake-stewart/multicursor.nvim",
     branch = "1.0",
@@ -44,6 +102,11 @@ return {
       set({ "n", "x" }, "<C-n>", function()
         mc.matchAddCursor(1)
       end)
+
+      set({ "v", "x" }, "<C-n>", function()
+        mc.matchAddCursor(1)
+      end)
+
       set({ "n", "x" }, "<leader>s", function()
         mc.matchSkipCursor(1)
       end)

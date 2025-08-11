@@ -3,10 +3,13 @@
 -- Add any additional options here
 
 if vim.g.neovide then
-  vim.g.snacks_animate = false
+  vim.g.snacks_animate = true
   vim.o.guifont = "JetBrainsMonoNL Nerd Font:h18"
-  vim.g.neovide_transparency = 0.95
+  vim.g.neovide_opacity = 0.95
 end
+
+vim.opt.exrc = true
+vim.opt.secure = true  -- 安全模式，避免执行危险命令
 
 vim.opt_local.swapfile = false
 vim.opt_local.redrawtime = 2000
