@@ -8,8 +8,10 @@ trace_array=(
     "$HOME/.config/zed/"
     "$HOME/.config/kitty/kitty.conf"
     "$HOME/.config/hypr/userprefs.conf"
+
     "$HOME/.config/fcitx5"
-    
+    "$HOME/.local/share/fcitx5"
+
     "$HOME/.local/share/bin/windowoperation.sh"
     "$HOME/.local/share/bin/safe_rm.sh"
     "$HOME/.local/share/bin/autostart.sh"

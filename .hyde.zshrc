@@ -75,6 +75,7 @@ setopt hist_reduce_blanks
 setopt SHARE_HISTORY
 
 export TERM=xterm
+export EDITOR=nvim
 export PATH=$PATH:~/.local/share/bin:~/.cargo/bin
 
 function lf() {
