@@ -75,7 +75,6 @@ setopt hist_reduce_blanks
 setopt SHARE_HISTORY
 
 export TERM=xterm
-export EDITOR=nvim
 export PATH=$PATH:~/.local/share/bin:~/.cargo/bin
 
 function lf() {
@@ -99,4 +98,3 @@ alias mirrors-fast="sudo reflector --verbose -l 200 -p https --sort rate --save 
 alias mirrors-us-fast="sudo reflector --verbose --country 'United States' -l 200 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 alias mirrors-cn-fast="sudo reflector --verbose --country 'China' -l 202 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 alias mirrors-hk-fast="sudo reflector --verbose --country 'Hong Kong' -l 201 -p https --sort rate --save /etc/pacman.d/mirrorlist"
-

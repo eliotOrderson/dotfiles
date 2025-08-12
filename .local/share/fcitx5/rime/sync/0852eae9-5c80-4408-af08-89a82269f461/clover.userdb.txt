@@ -1,0 +1,44 @@
+# Rime user dictionary
+#@/db_name	clover
+#@/db_type	userdb
+#@/rime_version	1.12.0
+#@/tick	47
+#@/user_id	0852eae9-5c80-4408-af08-89a82269f461
+an zhao 	按照	c=1 d=0.955997 t=47
+bei 	被	c=1 d=0.865022 t=47
+bian liang 	变量	c=1 d=0.860708 t=47
+chong xin 	重新	c=1 d=0.891366 t=47
+de 	的	c=3 d=2.5784 t=47
+gei 	给	c=1 d=0.970446 t=47
+geng huan 	更换	c=1 d=0.97531 t=47
+hou 	后	c=1 d=0.985112 t=47
+huan jing 	环境	c=1 d=0.856415 t=47
+jie jue 	解决	c=1 d=0.923116 t=47
+ke yi 	可以	c=1 d=0.946485 t=47
+ma 	吗	c=1 d=0.965605 t=47
+mei you 	没有	c=1 d=0.904837 t=47
+mu lu 	目录	c=1 d=0.97531 t=47
+nei he 	内核	c=2 d=1.9802 t=47
+qi ta 	其他	c=1 d=0.995012 t=47
+quan ju 	全局	c=1 d=0.951229 t=47
+ran hou 	然后	c=1 d=0.913931 t=47
+ru he 	如何	c=1 d=0.918512 t=47
+ruan jian 	软件	c=1 d=0.960789 t=47
+sha 	啥	c=1 d=0.941765 t=47
+shan chu 	删除	c=1 d=0.99005 t=47
+she zhi 	设置	c=3 d=2.56371 t=47
+shi 	是	c=2 d=1.78496 t=47
+shi yong 	使用	c=1 d=0.83527 t=47
+si 	四	c=2 d=1.6624 t=47
+wei 	为	c=2 d=1.68836 t=47
+wo 	我	c=2 d=1.7092 t=47
+wo bu xin 	我不信	c=1 d=0.965605 t=47
+wo de 	我的	c=1 d=0.826959 t=47
+xiao guo 	效果	c=1 d=0.909373 t=47
+ye 	叶	c=1 d=1 t=47
+yi ran 	依然	c=1 d=0.900325 t=47
+you 	有	c=1 d=0.927743 t=47
+you yi ge 	有一个	c=1 d=0.852144 t=47
+zai 	在	c=1 d=0.882497 t=47
+zhong 	中	c=1 d=0.88692 t=47
+zhong wen 	中文	c=1 d=0.985112 t=47
