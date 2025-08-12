@@ -33,6 +33,8 @@ trace_string=$(
     echo "${trace_array[*]}"
 )
 
+echo "tracing: ${trace_string}"
+
 mv $HOME/.hypr-dotfiles/.git $HOME -f
 git add $trace_string
 git commit -m "auto commit"
