@@ -13,6 +13,9 @@ pkg=(
     neovide
 
     google-chrome
+
+    claude-code
+    claude-code-router
 )
 
 pkg=$(

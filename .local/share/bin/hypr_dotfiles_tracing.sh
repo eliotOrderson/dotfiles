@@ -19,8 +19,10 @@ trace_array=(
     "$HOME/.local/share/bin/autostart.sh"
     "$HOME/.local/share/bin/hypr_dotfiles_tracing.sh"
 
-    "$HOME/.hyde.zshrc"
+    "$HOME/.config/zsh/user.zsh"
+    "$HOME/.config/zsh/.zshrc"
     "$HOME/.zsh_history"
+
     "$HOME/.makepkg"
     "$HOME/setting_cache"
 )
