@@ -49,7 +49,7 @@ plugins=(
 
 export HISTSIZE=10000
 export SAVEHIST=10000
-# export HISTFILE=~/.histfile
+export HISTFILE=~/.zsh_history
 
 setopt INC_APPEND_HISTORY
 # only save once in dupliction command
@@ -77,7 +77,6 @@ setopt SHARE_HISTORY
 export TERM=xterm
 export PATH=$PATH:~/.local/share/bin:~/.cargo/bin
 
-source ~/.profile
 function lf() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
