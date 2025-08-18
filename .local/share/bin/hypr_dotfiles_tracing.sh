@@ -35,7 +35,7 @@ trace_string=$(
 echo "tracing: ${trace_string}"
 
 mv $HOME/.hypr-dotfiles/.git $HOME -f
-git add $trace_string
+git add -u $trace_string
 git commit -m "auto commit"
 mv $HOME/.git $HOME/.hypr-dotfiles -f
 
