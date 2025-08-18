@@ -4,7 +4,7 @@
 
 if vim.g.neovide then
   vim.g.snacks_animate = true
-  vim.o.guifont = "JetBrainsMonoNL Nerd Font:h18"
+  vim.o.guifont = "JetBrainsMono Nerd Font:h18"
   vim.g.neovide_opacity = 0.95
 end
 

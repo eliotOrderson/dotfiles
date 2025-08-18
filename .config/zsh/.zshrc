@@ -82,7 +82,7 @@ function lf() {
 
 alias vi="neovide"
 alias rm-rf="/usr/bin/rm -rf "
-alias rm="safe_rm.sh"
+alias rm="trash"
 alias goto-trash="cd ~/.local/share/Trash/files/"
 alias yay="paru $1 --bottomup --makepkg $HOME/.makepkg"
 alias tar-mt="tar --use-compress-program=pigz -cvpf"

@@ -60,10 +60,12 @@ map("n", "<leader>h", ":noh<cr>", { desc = "Drop Highlight" })
 
 -- terminal
 local lazyterm = function()
-  Util.terminal(nil, { cwd = Util.root() })
+Snacks.terminal()
 end
 map("n", "<c-\\>", lazyterm, { desc = "Terminal (root dir)" })
 map("t", "<C-\\>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
+map("x", "p", '"_dP', { noremap = true, silent = true })
 
 map("n", "<enter>", "mao<esc>0<S-d>`a<cmd>delmarks a<cr>", { desc = "Add new line below" })
 

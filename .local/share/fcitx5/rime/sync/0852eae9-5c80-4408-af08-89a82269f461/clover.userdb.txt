@@ -2,43 +2,345 @@
 #@/db_name	clover
 #@/db_type	userdb
 #@/rime_version	1.12.0
-#@/tick	47
+#@/tick	665
 #@/user_id	0852eae9-5c80-4408-af08-89a82269f461
-an zhao 	按照	c=1 d=0.955997 t=47
-bei 	被	c=1 d=0.865022 t=47
-bian liang 	变量	c=1 d=0.860708 t=47
-chong xin 	重新	c=1 d=0.891366 t=47
-de 	的	c=3 d=2.5784 t=47
-gei 	给	c=1 d=0.970446 t=47
-geng huan 	更换	c=1 d=0.97531 t=47
-hou 	后	c=1 d=0.985112 t=47
-huan jing 	环境	c=1 d=0.856415 t=47
-jie jue 	解决	c=1 d=0.923116 t=47
-ke yi 	可以	c=1 d=0.946485 t=47
-ma 	吗	c=1 d=0.965605 t=47
-mei you 	没有	c=1 d=0.904837 t=47
-mu lu 	目录	c=1 d=0.97531 t=47
-nei he 	内核	c=2 d=1.9802 t=47
-qi ta 	其他	c=1 d=0.995012 t=47
-quan ju 	全局	c=1 d=0.951229 t=47
-ran hou 	然后	c=1 d=0.913931 t=47
-ru he 	如何	c=1 d=0.918512 t=47
-ruan jian 	软件	c=1 d=0.960789 t=47
-sha 	啥	c=1 d=0.941765 t=47
-shan chu 	删除	c=1 d=0.99005 t=47
-she zhi 	设置	c=3 d=2.56371 t=47
-shi 	是	c=2 d=1.78496 t=47
-shi yong 	使用	c=1 d=0.83527 t=47
-si 	四	c=2 d=1.6624 t=47
-wei 	为	c=2 d=1.68836 t=47
-wo 	我	c=2 d=1.7092 t=47
-wo bu xin 	我不信	c=1 d=0.965605 t=47
-wo de 	我的	c=1 d=0.826959 t=47
-xiao guo 	效果	c=1 d=0.909373 t=47
-ye 	叶	c=1 d=1 t=47
-yi ran 	依然	c=1 d=0.900325 t=47
-you 	有	c=1 d=0.927743 t=47
-you yi ge 	有一个	c=1 d=0.852144 t=47
-zai 	在	c=1 d=0.882497 t=47
-zhong 	中	c=1 d=0.88692 t=47
-zhong wen 	中文	c=1 d=0.985112 t=47
+an zhao 	按照	c=1 d=0.955997 t=665
+an zhuang 	安装	c=2 d=1.93143 t=665
+ba 	把	c=3 d=2.1046 t=665
+bao chi 	保持	c=1 d=0.965605 t=665
+bei 	被	c=3 d=2.28334 t=665
+ben di 	本地	c=2 d=1.81895 t=665
+ben shen 	本身	c=1 d=0.970446 t=665
+beng kui 	崩溃	c=1 d=0.960789 t=665
+bi ji 	笔记	c=1 d=1 t=665
+bi jiao 	比较	c=1 d=0.99005 t=665
+bi li bi li 	哔哩哔哩	c=1 d=0.937067 t=665
+bian liang 	变量	c=2 d=1.67994 t=665
+bian ma 	编码	c=2 d=1.79777 t=665
+bian ma qi 	编码器	c=1 d=0.918512 t=665
+bian xie 	编写	c=1 d=0.923116 t=665
+biao ge 	表格	c=3 d=2.57782 t=665
+biao qian 	标签	c=1 d=0.937067 t=665
+biao tou 	表头	c=1 d=0.946485 t=665
+bing 	并	c=1 d=0.99005 t=665
+bu gan 	不敢	c=1 d=0.810584 t=665
+bu shi 	不是	c=2 d=1.75641 t=665
+bu shu 	部署	c=1 d=0.946485 t=665
+bu xi qi 	不稀奇	c=1 d=1 t=665
+cang ku 	仓库	c=9 d=6.6695 t=665
+cha kan 	查看	c=4 d=3.5572 t=665
+chao 	超	c=8 d=6.80076 t=665
+che xiao 	撤销	c=1 d=0.932394 t=665
+cheng xu 	程序	c=1 d=0.955997 t=665
+chong xin 	重新	c=1 d=0.891366 t=665
+chu 	出	c=1 d=0.856415 t=665
+chuang jian 	创建	c=1 d=0.786628 t=665
+cong 	从	c=1 d=0.923116 t=665
+cun zai 	存在	c=1 d=1 t=665
+cuo wu 	错误	c=3 d=2.83111 t=665
+da 	大	c=1 d=0.995012 t=665
+da an 	答案	c=1 d=0.985112 t=665
+dai biao 	代表	c=1 d=0.878095 t=665
+dan shi 	但是	c=1 d=0.970446 t=665
+dang qian 	当前	c=2 d=1.63608 t=665
+dao 	到	c=3 d=2.77563 t=665
+dao ru 	导入	c=1 d=0.985112 t=665
+dao zhi 	导致	c=5 d=3.81436 t=665
+de 	的	c=38 d=15.9435 t=665
+deng xiao ping 	邓小平	c=1 d=0.786628 t=665
+diao 	掉	c=1 d=0.878095 t=665
+diao 	调	c=1 d=0.965605 t=665
+ding ji 	顶级	c=1 d=0.99005 t=665
+dou 	抖	c=1 d=0.927743 t=665
+dou shuo 	都说	c=1 d=0.802519 t=665
+dui qi 	对齐	c=5 d=4.55828 t=665
+duo shao 	多少	c=1 d=0.701173 t=665
+duo yu 	多余	c=1 d=0.852144 t=665
+fan wei 	范围	c=1 d=0.88692 t=665
+fan xu lie hua 	反序列化	c=1 d=0.980199 t=665
+fang qi 	放弃	c=1 d=0.980199 t=665
+fang shi 	方式	c=1 d=0.970446 t=665
+fen zhi 	分支	c=5 d=4.29409 t=665
+fen zhu 	分主	c=1 d=0.900325 t=665
+fu zhi 	复制	c=1 d=0.794534 t=665
+gai wei 	改为	c=1 d=0.955997 t=665
+ge 	个	c=6 d=3.64214 t=665
+ge 	哥	c=1 d=1 t=665
+ge shi 	格式	c=1 d=0.839457 t=665
+gei 	给	c=2 d=1.37475 t=665
+gei ni 	给你	c=2 d=1.52307 t=665
+gei wo 	给我	c=3 d=2.19399 t=665
+gen ju 	根据	c=1 d=0.932394 t=665
+geng 	梗	c=1 d=0.985112 t=665
+geng huan 	更换	c=1 d=0.97531 t=665
+geng xin 	更新	c=1 d=0.995012 t=665
+gong hao 	功耗	c=3 d=2.77723 t=665
+gong ju 	工具	c=2 d=1.79189 t=665
+gong neng 	功能	c=1 d=0.99005 t=665
+gong xiang 	共享	c=2 d=1.67355 t=665
+gu du 	孤独	c=1 d=0.822835 t=665
+guan bi 	关闭	c=1 d=0.937067 t=665
+guan yu 	关于	c=5 d=3.61704 t=665
+gui fan 	规范	c=2 d=1.75957 t=665
+gui hua 	规划	c=1 d=0.913931 t=665
+guo 	过	c=2 d=1.72846 t=665
+hai 	还	c=1 d=0.995012 t=665
+hai you 	还有	c=1 d=0.697676 t=665
+hang 	行	c=6 d=4.74417 t=665
+he 	和	c=4 d=3.22075 t=665
+he bing 	合并	c=3 d=2.4724 t=665
+hou 	后	c=1 d=0.985112 t=665
+hu lve 	忽略	c=2 d=1.7851 t=665
+hua 	画	c=2 d=1.8385 t=665
+hua 	话	c=2 d=1.51292 t=665
+huan 	换	c=6 d=4.85945 t=665
+huan jing 	环境	c=1 d=0.856415 t=665
+hui 	会	c=2 d=1.59991 t=665
+hui bu hui 	会不会	c=1 d=0.927743 t=665
+hui da 	回答	c=1 d=0.980199 t=665
+hui zhi 	绘制	c=1 d=0.941765 t=665
+huo 	或	c=2 d=1.90727 t=665
+jia yuan 	家园	c=2 d=1.68194 t=665
+jian jie 	简洁	c=1 d=0.951229 t=665
+jiang 	讲	c=7 d=4.91646 t=665
+jie 	杰	c=1 d=0.995012 t=665
+jie gou 	结构	c=1 d=0.946485 t=665
+jie he 	结合	c=1 d=0.71177 t=665
+jie jue 	解决	c=2 d=1.62563 t=665
+jie ma 	解码	c=1 d=0.970446 t=665
+jie shi 	解释	c=1 d=0.946485 t=665
+jie xi 	解析	c=1 d=0.99005 t=665
+jie xi qi 	解析器	c=1 d=0.965605 t=665
+jing 	景	c=1 d=0.88692 t=665
+jing chang 	经常	c=1 d=0.941765 t=665
+jiu shi 	就是	c=1 d=0.97531 t=665
+kai 	开	c=1 d=0.941765 t=665
+kai tou 	开头	c=1 d=0.985112 t=665
+kan 	看	c=1 d=0.843665 t=665
+kan dai 	看待	c=1 d=0.965605 t=665
+ke 	可	c=1 d=0.941765 t=665
+ke ji 	科技	c=7 d=6.01202 t=665
+ke yi 	可以	c=3 d=2.42751 t=665
+ke yong 	可用	c=1 d=0.946485 t=665
+kong zhi quan 	控制权	c=1 d=1 t=665
+ku 	库	c=2 d=1.86872 t=665
+kuang jia 	框架	c=1 d=0.965605 t=665
+lai 	来	c=5 d=4.48882 t=665
+lan se 	蓝色	c=1 d=1 t=665
+le 	了	c=2 d=1.87372 t=665
+li 	里	c=3 d=2.31968 t=665
+liang ji fen hua 	两极分化	c=1 d=0.67032 t=665
+liang ju hua 	两句话	c=1 d=0.794534 t=665
+lie 	列	c=1 d=0.923116 t=665
+liu lan qi 	浏览器	c=4 d=3.97017 t=665
+ma 	吗	c=2 d=1.48659 t=665
+ma yi ji tuan 	蚂蚁集团	c=1 d=0.985112 t=665
+ma yun 	马云	c=2 d=1.8329 t=665
+mao ze dong 	毛泽东	c=2 d=1.898 t=665
+mei guan 	美观	c=1 d=0.985112 t=665
+mei you 	没有	c=1 d=0.904837 t=665
+mian fei 	免费	c=1 d=1 t=665
+ming ci 	名词	c=1 d=0.873716 t=665
+ming ling 	命令	c=2 d=1.8606 t=665
+mo kuai 	模块	c=1 d=0.860708 t=665
+mo ta 	魔塔	c=3 d=2.95047 t=665
+mo xing 	模型	c=1 d=0.955997 t=665
+mou ge 	某个	c=1 d=0.923116 t=665
+mou xie 	某些	c=3 d=2.42211 t=665
+mu lu 	目录	c=1 d=0.97531 t=665
+na 	那	c=1 d=0.937067 t=665
+na ge 	那个	c=1 d=0.985112 t=665
+na ni 	那你	c=1 d=0.900325 t=665
+nei 	内	c=1 d=0.904837 t=665
+nei han 	内涵	c=2 d=1.83946 t=665
+nei he 	内核	c=4 d=3.24919 t=665
+nei wang 	内网	c=1 d=0.985112 t=665
+neng fou 	能否	c=1 d=0.927743 t=665
+ni 	你	c=4 d=3.53751 t=665
+nian 	年	c=1 d=0.814647 t=665
+ou 	偶	c=0 d=0.0965605 t=665
+pao 	跑	c=1 d=0.97531 t=665
+pei zhi 	配置	c=2 d=1.55885 t=665
+pen di 	盆地	c=1 d=0.985112 t=665
+piao 	嫖	c=1 d=1 t=665
+pin xie 	拼写	c=2 d=1.90305 t=665
+ping jia 	评价	c=3 d=1.82902 t=665
+ping lun 	评论	c=2 d=1.70336 t=665
+pu tong 	普通	c=1 d=0.960789 t=665
+qi 	其	c=2 d=1.69182 t=665
+qi 	启	c=8 d=6.76684 t=665
+qi che ke ji 	汽车科技	c=1 d=0.937067 t=665
+qi ta 	其他	c=2 d=1.9178 t=665
+qie huan 	切换	c=1 d=0.99005 t=665
+qu 	区	c=1 d=0.909373 t=665
+qu bie 	区别	c=1 d=0.97531 t=665
+quan ju 	全局	c=3 d=2.58892 t=665
+que 	缺	c=1 d=0.97531 t=665
+ran hou 	然后	c=4 d=3.04174 t=665
+ren wu 	任务	c=1 d=0.918512 t=665
+rong qi 	容器	c=1 d=0.995012 t=665
+ru guo 	如果	c=1 d=0.66034 t=665
+ru he 	如何	c=3 d=2.55778 t=665
+ru ju 	入局	c=0 d=0.0937067 t=665
+ruan jian 	软件	c=1 d=0.960789 t=665
+se 	色	c=0 d=0.0985112 t=665
+sha 	啥	c=1 d=0.941765 t=665
+shan chu 	删除	c=6 d=4.52921 t=665
+shang 	上	c=1 d=0.946485 t=665
+shang yi ci 	上一次	c=1 d=0.937067 t=665
+shang you 	上游	c=2 d=1.5659 t=665
+shao 	少	c=1 d=0.951229 t=665
+she hui 	社会	c=2 d=1.92639 t=665
+she qu 	社区	c=2 d=1.97521 t=665
+she zhi 	设置	c=3 d=2.56371 t=665
+shen me 	什么	c=13 d=7.45451 t=665
+shen yi 	深意	c=1 d=0.843665 t=665
+sheng cheng 	生成	c=1 d=0.941765 t=665
+shi 	使	c=1 d=0.99005 t=665
+shi 	时	c=6 d=4.27119 t=665
+shi 	是	c=14 d=7.99434 t=665
+shi bai 	失败	c=1 d=0.683861 t=665
+shi ji 	实际	c=1 d=0.995012 t=665
+shi jian 	时间	c=2 d=1.7492 t=665
+shi pin 	视频	c=2 d=1.85572 t=665
+shi yong 	使用	c=11 d=7.60003 t=665
+shi yong ou ge 	使用偶个	c=1 d=0.970446 t=665
+shou ce 	手册	c=1 d=0.995012 t=665
+shu biao 	鼠标	c=1 d=0.932394 t=665
+shuo 	说	c=4 d=2.86151 t=665
+shuo ming 	说明	c=1 d=0.980199 t=665
+si 	四	c=2 d=1.6624 t=665
+si chuan 	四川	c=1 d=0.965605 t=665
+si kao 	思考	c=1 d=0.970446 t=665
+sou suo 	搜索	c=1 d=0.951229 t=665
+su lian 	苏联	c=4 d=2.9972 t=665
+suo you 	所有	c=3 d=2.6517 t=665
+ta 	他	c=2 d=1.56611 t=665
+te se 	特色	c=2 d=1.60584 t=665
+te shu 	特殊	c=1 d=0.904837 t=665
+ti huan 	替换	c=2 d=1.58905 t=665
+ti jiao 	提交	c=5 d=3.75842 t=665
+tian jia 	添加	c=2 d=1.72717 t=665
+tiao 	条	c=1 d=0.946485 t=665
+tong 	通	c=1 d=0.980199 t=665
+wan 	晚	c=1 d=0.810584 t=665
+wan cheng 	完成	c=1 d=0.798516 t=665
+wang 	王	c=1 d=0.856415 t=665
+wang ye 	网页	c=1 d=0.932394 t=665
+wei 	为	c=6 d=3.78717 t=665
+wei bo 	微博	c=1 d=0.941765 t=665
+wei shen me 	为什么	c=2 d=1.67263 t=665
+wei xin 	微信	c=1 d=0.99005 t=665
+wen ben 	文本	c=2 d=1.70157 t=665
+wen dang 	文档	c=3 d=2.54803 t=665
+wen jian 	文件	c=5 d=3.75279 t=665
+wo 	我	c=8 d=5.44164 t=665
+wo bu xin 	我不信	c=1 d=0.965605 t=665
+wo de 	我的	c=1 d=0.826959 t=665
+wo men 	我们	c=2 d=1.34071 t=665
+wu da 	武大	c=1 d=0.904837 t=665
+wu fa 	无法	c=2 d=1.72626 t=665
+wu yong 	无用	c=1 d=0.918512 t=665
+xi fen 	细分	c=1 d=0.923116 t=665
+xia 	下	c=1 d=0.955997 t=665
+xian 	先	c=0 d=0.0960789 t=665
+xian shi 	显示	c=4 d=3.60594 t=665
+xian shi yong 	先使用	c=1 d=0.965605 t=665
+xian you 	现有	c=1 d=0.985112 t=665
+xian zai 	现在	c=1 d=0.882497 t=665
+xian zhi 	限制	c=2 d=1.898 t=665
+xiang mu 	项目	c=2 d=1.78309 t=665
+xiang xi 	详细	c=1 d=0.941765 t=665
+xiang ying 	响应	c=1 d=0.97531 t=665
+xiao dian 	笑点	c=1 d=0.970446 t=665
+xiao guo 	效果	c=1 d=0.909373 t=665
+xiao hua 	笑话	c=9 d=6.5919 t=665
+xie 	些	c=1 d=0.941765 t=665
+xie 	写	c=1 d=0.918512 t=665
+xie ba 	写吧	c=1 d=0.904837 t=665
+xin 	新	c=1 d=0.980199 t=665
+xin de 	新的	c=1 d=0.794534 t=665
+xin wen 	新闻	c=1 d=0.909373 t=665
+xiu fu 	修复	c=2 d=1.87472 t=665
+xiu gai 	修改	c=1 d=0.778801 t=665
+xiu mian 	休眠	c=1 d=0.965605 t=665
+xiu zheng 	修正	c=1 d=0.970446 t=665
+xu qiu 	需求	c=1 d=0.806541 t=665
+xuan ran 	渲染	c=1 d=0.99005 t=665
+xuan zhong 	选中	c=1 d=0.806541 t=665
+yan 	淹	c=1 d=0.995012 t=665
+yao qiu 	要求	c=1 d=0.980199 t=665
+ye 	也	c=1 d=0.748264 t=665
+ye 	叶	c=1 d=1 t=665
+ye mei you 	也没有	c=1 d=0.97531 t=665
+yi ge 	一个	c=4 d=2.52737 t=665
+yi ji 	以及	c=2 d=1.956 t=665
+yi kuan 	一款	c=1 d=0.927743 t=665
+yi ran 	依然	c=1 d=0.900325 t=665
+yi shang 	以上	c=0 d=0.0937067 t=665
+yi shang ru ju 	以上入局	c=1 d=0.941765 t=665
+yi xia 	一下	c=2 d=1.71243 t=665
+yi xie 	一些	c=1 d=0.941765 t=665
+yin 	音	c=1 d=0.932394 t=665
+yin qi 	引起	c=1 d=0.951229 t=665
+yin wei 	因为	c=1 d=0.927743 t=665
+ying gai 	应该	c=1 d=0.946485 t=665
+ying wen 	英文	c=1 d=0.99005 t=665
+ying xiang 	影响	c=1 d=0.891366 t=665
+ying yong 	应用	c=1 d=0.937067 t=665
+yong 	用	c=2 d=1.7214 t=665
+yong hu 	用户	c=1 d=0.980199 t=665
+you 	又	c=1 d=0.927743 t=665
+you 	有	c=7 d=4.55992 t=665
+you dian 	优点	c=1 d=0.970446 t=665
+you xiu 	优秀	c=1 d=0.995012 t=665
+you yi ge 	有一个	c=1 d=0.852144 t=665
+yu 	与	c=1 d=0.946485 t=665
+yu 	于	c=1 d=1 t=665
+yuan 	原	c=3 d=2.47919 t=665
+yuan 	媛	c=1 d=0.891366 t=665
+yuan cheng 	远程	c=3 d=2.84548 t=665
+yuan li 	原理	c=1 d=0.99005 t=665
+yun xing 	运行	c=1 d=0.955997 t=665
+zai 	在	c=3 d=2.30262 t=665
+zai ci 	再次	c=1 d=0.83527 t=665
+zai na 	在哪	c=1 d=0.97531 t=665
+zen me 	怎么	c=5 d=3.87728 t=665
+zen me shuo 	怎么说	c=1 d=0.995012 t=665
+zeng qiang 	增强	c=2 d=1.86042 t=665
+zhan 	站	c=1 d=0.99005 t=665
+zhan tie 	粘贴	c=3 d=2.51865 t=665
+zhe 	这	c=1 d=0.970446 t=665
+zhe ge 	这个	c=5 d=3.39882 t=665
+zhe ju hua 	这句话	c=1 d=0.937067 t=665
+zhe xie 	这些	c=1 d=0.980199 t=665
+zheng ce 	政策	c=1 d=0.666977 t=665
+zheng chang 	正常	c=5 d=4.366 t=665
+zheng zhi 	政治	c=2 d=1.87311 t=665
+zhi 	指	c=1 d=0.99005 t=665
+zhi bao liu 	只保留	c=1 d=0.927743 t=665
+zhi chi 	支持	c=1 d=1 t=665
+zhi ding 	指定	c=1 d=0.941765 t=665
+zhi hou 	之后	c=1 d=0.798516 t=665
+zhi hu 	知乎	c=1 d=0.985112 t=665
+zhi nan 	指南	c=1 d=1 t=665
+zhi neng 	智能	c=1 d=0.856415 t=665
+zhong 	中	c=1 d=0.88692 t=665
+zhong duan 	终端	c=1 d=0.97531 t=665
+zhong guo 	中国	c=1 d=0.865022 t=665
+zhong shi 	重视	c=1 d=0.960789 t=665
+zhong wen 	中文	c=1 d=0.985112 t=665
+zhou hui 	周会	c=2 d=1.89319 t=665
+zhu 	主	c=1 d=0.895834 t=665
+zhu ru ci lei 	诸如此类	c=1 d=0.687289 t=665
+zhu ti 	主题	c=1 d=1.01823 t=665
+zhu ti se 	主题色	c=1 d=0.99005 t=665
+zhu yi 	注意	c=1 d=0.980199 t=665
+zhuang tai 	状态	c=2 d=1.76508 t=665
+zi duan 	字段	c=1 d=0.918512 t=665
+zi yuan 	自愿	c=1 d=0.97531 t=665
+zong jie 	总结	c=2 d=1.92774 t=665
+zu 	组	c=1 d=0.985112 t=665
+zui xin 	最新	c=2 d=1.70731 t=665
+zuo yong 	作用	c=2 d=1.89842 t=665
+zuo yong yu 	作用域	c=2 d=1.74765 t=665

@@ -16,6 +16,7 @@ pkg=(
 
     claude-code
     claude-code-router
+    docker
 )
 
 pkg=$(
@@ -24,3 +25,6 @@ pkg=$(
 )
 
 yay -S $pkg
+
+# other opertion
+sudo usermod -aG docker $USER && newgrp docker

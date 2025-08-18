@@ -28,15 +28,8 @@ local settings = {
       maxLength = vim.NIL,
       typing = { triggerChars = "=.{(><" },
     },
-    -- check = {
-    --   features = "binance",
-    -- },
-    -- diagnostics = {
-    --   disabled = { "inactive-code" },
-    -- },
   },
 }
-
 
 vim.g.rustaceanvim = {
 
@@ -47,12 +40,14 @@ vim.g.rustaceanvim = {
   },
   --- @type `rustaceanvim.lsp.ClientOpts`
   server = {
-        settings = vim.tbl_deep_extend("force", settings,load_project_rust_settings())
-    },
+    settings = vim.tbl_deep_extend("force", settings, load_project_rust_settings()),
+  },
   --- @type `rustaceanvim.dap.Opts`
   dap = {},
 }
+
 return {
+
   -- remote development
   -- {
   --   "chipsenkbeil/distant.nvim",
@@ -71,10 +66,48 @@ return {
 
   -- { "mg979/vim-visual-multi" },
   {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+  {
+    "coder/claudecode.nvim",
+    dependencies = { "folke/snacks.nvim" },
+    opts = {
+      terminal_cmd = "ccr code", -- Point to local installation
+    },
+    config = true,
+    keys = {
+      { "<leader>a", nil, desc = "AI/Claude Code" },
+      { "<leader>ac", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
+      { "<leader>af", "<cmd>ClaudeCodeFocus<cr>", desc = "Focus Claude" },
+      { "<leader>ar", "<cmd>ClaudeCode --resume<cr>", desc = "Resume Claude" },
+      { "<leader>aC", "<cmd>ClaudeCode --continue<cr>", desc = "Continue Claude" },
+      { "<leader>am", "<cmd>ClaudeCodeSelectModel<cr>", desc = "Select Claude model" },
+      { "<leader>ab", "<cmd>ClaudeCodeAdd %<cr>", desc = "Add current buffer" },
+      { "<leader>as", "<cmd>ClaudeCodeSend<cr>", mode = "v", desc = "Send to Claude" },
+      {
+        "<leader>as",
+        "<cmd>ClaudeCodeTreeAdd<cr>",
+        desc = "Add file",
+        ft = { "NvimTree", "neo-tree", "oil", "minifiles" },
+      },
+      -- Diff management
+      { "<leader>aa", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
+      { "<leader>ad", "<cmd>ClaudeCodeDiffDeny<cr>", desc = "Deny diff" },
+    },
+  },
+
+  {
     "mrcjkb/rustaceanvim",
     version = "^6", -- Recommended
     lazy = false, -- This plugin is already lazy
   },
+
   {
     "jake-stewart/multicursor.nvim",
     branch = "1.0",
@@ -99,11 +132,7 @@ return {
       end)
 
       -- Add or skip adding a new cursor by matching word/selection
-      set({ "n", "x" }, "<C-n>", function()
-        mc.matchAddCursor(1)
-      end)
-
-      set({ "v", "x" }, "<C-n>", function()
+      set({ "n", "x", "v" }, "<C-n>", function()
         mc.matchAddCursor(1)
       end)
 
