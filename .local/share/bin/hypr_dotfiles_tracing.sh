@@ -42,7 +42,7 @@ mv $HOME/.git $HOME/.hypr-dotfiles -f
 if [ $? -eq 0 ]; then
     echo "Files added successfully."
     echo "Sync to github?"
-    cd $HOME/.hypr-dotfiles/.git
+    cd $HOME/.hypr-dotfiles
 else
     echo "Error adding files."
 fi
