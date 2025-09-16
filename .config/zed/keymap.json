@@ -42,6 +42,7 @@
       "alt-l": ["workspace::SendKeystrokes", "$"],
       "alt-h": ["workspace::SendKeystrokes", "^"],
       "alt-=": ["workspace::SendKeystrokes", "% l v % % h"],
+      "z f": "editor::FoldFunctionBodies",
 
       "ctrl-[": "editor::Outdent",
       "ctrl-]": "editor::Indent",

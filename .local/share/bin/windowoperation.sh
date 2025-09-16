@@ -16,7 +16,7 @@ while getopts ":c:e:w:m:" opts; do
     esac
 done
 
-# create appointed window or hide it
+# Create a window to the specified wokspace or hide it
 if [[ ! -z $class && ! -z $exec && ! -z $workspace ]]; then
     windowInfo=$(hyprctl clients -j | jq ".[] | select(.class ==\"$class\")")
     if [ -z $windowInfo ]; then

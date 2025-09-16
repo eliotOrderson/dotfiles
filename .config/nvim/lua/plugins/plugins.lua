@@ -1,53 +1,4 @@
-local function load_project_rust_settings()
-  local config_file = vim.fn.getcwd() .. "/rust-analyzer.json"
-  if vim.fn.filereadable(config_file) == 1 then
-    local ok, content = pcall(vim.fn.readfile, config_file)
-    if ok and content then
-      local json_str = table.concat(content, "\n")
-      local success, decoded = pcall(vim.fn.json_decode, json_str)
-      if success and type(decoded) == "table" then
-        return decoded
-      end
-    end
-  end
-  return {}
-end
-
-local settings = {
-  ["rust-analyzer"] = {
-    inlayHints = {
-      bindingModeHints = { enable = true },
-      closingBraceHints = { minLines = 0 },
-      closureCaptureHints = { enable = true },
-      closureReturnTypeHints = { enable = "always" },
-      expressionAdjustmentHints = {
-        enable = "reborrow",
-        hideOutsideUnsafe = true,
-      },
-      -- lifetimeElisionHints = { enable = "skip_trivial" },
-      maxLength = vim.NIL,
-      typing = { triggerChars = "=.{(><" },
-    },
-  },
-}
-
-vim.g.rustaceanvim = {
-
-  --- @type `rustaceanvim.tools.Opts`
-  tools = {
-    reload_workspace_from_cargo_toml = true,
-    float_win_config = { border = { "", "", "", " ", "", "", "", " " } },
-  },
-  --- @type `rustaceanvim.lsp.ClientOpts`
-  server = {
-    settings = vim.tbl_deep_extend("force", settings, load_project_rust_settings()),
-  },
-  --- @type `rustaceanvim.dap.Opts`
-  dap = {},
-}
-
 return {
-
   -- remote development
   -- {
   --   "chipsenkbeil/distant.nvim",
@@ -66,6 +17,36 @@ return {
 
   -- { "mg979/vim-visual-multi" },
   {
+    "saghen/blink.cmp",
+    dependencies = {
+      {
+        "Kaiser-Yang/blink-cmp-dictionary",
+        dependencies = { "nvim-lua/plenary.nvim" },
+      },
+    },
+    opts = {
+      sources = {
+        -- Add 'dictionary' to the list
+        default = { "dictionary", "lsp", "path", "buffer" },
+        providers = {
+          dictionary = {
+            module = "blink-cmp-dictionary",
+            name = "Dict",
+            -- Make sure this is at least 2.
+            -- 3 is recommended
+            max_items = 3,
+            min_keyword_length = 3,
+            opts = {
+              -- options for blink-cmp-dictionary
+              dictionary_files = { vim.fn.expand("~/.config/nvim/dictionary/words.dict") },
+              -- dictionary_directories = vim.fn.expand("~/.config/nvim/dictionary"),
+            },
+          },
+        },
+      },
+    },
+  },
+  {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = "cd app && yarn install",
@@ -76,37 +57,48 @@ return {
   },
   {
     "coder/claudecode.nvim",
-    dependencies = { "folke/snacks.nvim" },
     opts = {
-      terminal_cmd = "ccr code", -- Point to local installation
-    },
-    config = true,
-    keys = {
-      { "<leader>a", nil, desc = "AI/Claude Code" },
-      { "<leader>ac", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
-      { "<leader>af", "<cmd>ClaudeCodeFocus<cr>", desc = "Focus Claude" },
-      { "<leader>ar", "<cmd>ClaudeCode --resume<cr>", desc = "Resume Claude" },
-      { "<leader>aC", "<cmd>ClaudeCode --continue<cr>", desc = "Continue Claude" },
-      { "<leader>am", "<cmd>ClaudeCodeSelectModel<cr>", desc = "Select Claude model" },
-      { "<leader>ab", "<cmd>ClaudeCodeAdd %<cr>", desc = "Add current buffer" },
-      { "<leader>as", "<cmd>ClaudeCodeSend<cr>", mode = "v", desc = "Send to Claude" },
-      {
-        "<leader>as",
-        "<cmd>ClaudeCodeTreeAdd<cr>",
-        desc = "Add file",
-        ft = { "NvimTree", "neo-tree", "oil", "minifiles" },
+      terminal = {
+        provider = "external",
+        provider_opts = {
+          external_terminal_cmd = "kitty -e %s", -- Replace with your preferred terminal program. %s is replaced with claude command
+        },
       },
-      -- Diff management
-      { "<leader>aa", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
-      { "<leader>ad", "<cmd>ClaudeCodeDiffDeny<cr>", desc = "Deny diff" },
     },
   },
-
-  {
-    "mrcjkb/rustaceanvim",
-    version = "^6", -- Recommended
-    lazy = false, -- This plugin is already lazy
-  },
+  -- {
+  --   "coder/claudecode.nvim",
+  --   dependencies = { "folke/snacks.nvim" },
+  --   opts = {
+  --     terminal_cmd = "ccr code", -- Point to local installation
+  --     terminal = {
+  --       provider = "external",
+  --       provider_opts = {
+  --         external_terminal_cmd = "kitty -e %", -- Replace with your preferred terminal program. %s is replaced with claude command
+  --       },
+  --     },
+  --   },
+  --   config = true,
+  --   keys = {
+  --     { "<leader>a", nil, desc = "AI/Claude Code" },
+  --     { "<leader>ac", "<cmd>ClaudeCode<cr>", desc = "Toggle Claude" },
+  --     { "<leader>af", "<cmd>ClaudeCodeFocus<cr>", desc = "Focus Claude" },
+  --     { "<leader>ar", "<cmd>ClaudeCode --resume<cr>", desc = "Resume Claude" },
+  --     { "<leader>aC", "<cmd>ClaudeCode --continue<cr>", desc = "Continue Claude" },
+  --     { "<leader>am", "<cmd>ClaudeCodeSelectModel<cr>", desc = "Select Claude model" },
+  --     { "<leader>ab", "<cmd>ClaudeCodeAdd %<cr>", desc = "Add current buffer" },
+  --     { "<leader>as", "<cmd>ClaudeCodeSend<cr>", mode = "v", desc = "Send to Claude" },
+  --     {
+  --       "<leader>as",
+  --       "<cmd>ClaudeCodeTreeAdd<cr>",
+  --       desc = "Add file",
+  --       ft = { "NvimTree", "neo-tree", "oil", "minifiles" },
+  --     },
+  --     -- Diff management
+  --     { "<leader>aa", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
+  --     { "<leader>ad", "<cmd>ClaudeCodeDiffDeny<cr>", desc = "Deny diff" },
+  --   },
+  -- },
 
   {
     "jake-stewart/multicursor.nvim",

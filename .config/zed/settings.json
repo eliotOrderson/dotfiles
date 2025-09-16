@@ -6,6 +6,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "agent": {
+    "play_sound_when_agent_done": true,
     "always_allow_tool_actions": false,
     "default_profile": "write",
     "default_model": {
@@ -41,7 +42,7 @@
   "theme": {
     "mode": "system",
     "light": "Tokyo Night",
-    "dark": "Tokyo Night"
+    "dark": "Tokyo Night Storm"
   },
   "languages": {
     "JavaScript": {
