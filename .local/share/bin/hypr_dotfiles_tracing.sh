@@ -40,9 +40,7 @@ git commit -m "auto commit"
 mv $HOME/.git $HOME/.hypr-dotfiles -f
 
 if [ $? -eq 0 ]; then
-    echo "Files added successfully."
-    echo "Sync to github?"
-    cd $HOME/.hypr-dotfiles
+    echo "Files added successfully. repository in the path: $HOME/.hypr-dotfiles/"
 else
     echo "Error adding files."
 fi
