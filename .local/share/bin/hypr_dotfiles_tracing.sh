@@ -7,9 +7,10 @@ trace_array=(
     "$HOME/.config/nvim/"
     "$HOME/.config/zed/"
     "$HOME/.config/kitty/kitty.conf"
-    "$HOME/.config/hypr/userprefs.conf"
     "$HOME/.config/user-dirs.dirs"
     "$HOME/.config/user-dirs.locale"
+    "$HOME/.config/hypr/userprefs.conf"
+    "$HOME/.config/hyde/config.toml"
 
     "$HOME/.config/fcitx5"
     "$HOME/.local/share/fcitx5"

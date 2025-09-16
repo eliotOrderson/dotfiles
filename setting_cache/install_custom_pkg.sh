@@ -13,6 +13,7 @@ pkg=(
     neovide
 
     google-chrome
+    rclone
 
     claude-code
     claude-code-router
